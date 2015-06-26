@@ -1,0 +1,33 @@
+{
+  "name": "mom-win",
+  "version": "1.0.0",
+  "description": "Simple React app for my mom!",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tucosalamanja/mom-win.git"
+  },
+  "author": "attomos",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/tucosalamanja/mom-win#readme",
+  "devDependencies": {
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "js-combinatorics": "^0.5.0",
+    "lodash.assign": "^3.2.0",
+    "react": "^0.13.3",
+    "reactify": "^1.1.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.3"
+  }
+}
