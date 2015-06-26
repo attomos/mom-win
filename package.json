@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tucosalamanja/mom-win.git"
+    "url": "https://github.com/attomos/mom-win.git"
   },
   "author": "attomos",
   "license": "MIT",
   "bugs": {
     "url": ""
   },
-  "homepage": "https://github.com/tucosalamanja/mom-win#readme",
+  "homepage": "https://github.com/attomos/mom-win#readme",
   "devDependencies": {
     "browserify": "^10.2.4",
     "gulp": "^3.9.0",
