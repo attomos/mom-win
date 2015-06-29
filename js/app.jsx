@@ -50,7 +50,7 @@ var OutputBox = React.createClass({
   render: function() {
     return (
       <div>
-        <h3>{this.state.N} ตัว</h3>
+        <h3>{this.state.N} elements</h3>
         <textarea id={this.props.id} rows="12" valueLink={this.linkState('output')}></textarea>
       </div>
     );
