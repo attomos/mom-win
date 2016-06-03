@@ -6,13 +6,13 @@
   height: 2.5em;
   font-size: 30px;
 }
-#output-2,#output-3 {
+#two,#three {
   width: 100%;
   height: 140px;
 }
-#output-2 {
+#two {
   background: #FFE0FF;
 }
-#output-3 {
+#three {
   background: #E3EDF3;
 }

@@ -4,23 +4,33 @@ import OutputBox from './OutputBox.jsx';
 class MomWinApp extends React.Component {
   constructor() {
     super();
-    this.state = { value: 0 };
+    this.state = { value: '0' };
   }
 
-  handlerKeyUp() {
-    const value = document.getElementById('input').value;
-    this.setState({ value: value });
-    // FIXME: https://gist.github.com/jimfb/4faa6cbfb1ef476bd105
-    this.refs.output2.updateOutput(value);
-    this.refs.output3.updateOutput(value);
+  handleKeyUp() {
+    const { value } = document.getElementById('input');
+    this.setState({ value });
   }
 
   render() {
+    const props = {
+      id: 'input',
+      className: 'input u-full-width',
+      type: 'text',
+      maxLength: 10,
+      autoFocus: 'true',
+      onChange: this.handleKeyUp.bind(this),
+    };
+
+    const { value } = this.state;
+    const v2 = { id: 'two', value };
+    const v3 = { id: 'three', value };
+
     return (
       <div>
-        <input id="input" className="input u-full-width" type="text" maxLength="10" autoFocus onChange={this.handleKeyUp} />
-        <OutputBox id="output-2" ref="output2" />
-        <OutputBox id="output-3" ref="output3" />
+        <input {...props} />
+        <OutputBox {...v2} />
+        <OutputBox {...v3} />
       </div>
     );
   }
