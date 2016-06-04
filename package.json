@@ -2,10 +2,10 @@
   "name": "mom-win",
   "version": "1.0.0",
   "description": "A simple React app for my mom!",
-  "main": "dist/app.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "build": "webpack -p",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "ava",
     "start": "webpack-dev-server --progress"
   },
   "repository": {
@@ -17,6 +17,16 @@
   "bugs": {
     "url": ""
   },
+  "ava": {
+    "source": [
+      "src/*.{js,jsx}",
+      "test.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
   "homepage": "https://github.com/attomos/mom-win#readme",
   "dependencies": {
     "react": "~15.0.1",
@@ -24,6 +34,7 @@
     "lodash.assign": "4.0.8"
   },
   "devDependencies": {
+    "ava": "^0.15.1",
     "babel-core": "^6.3.26",
     "babel-eslint": "~6.0.3",
     "babel-loader": "^6.2.4",

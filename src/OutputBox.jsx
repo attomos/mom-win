@@ -3,7 +3,7 @@ import getCombination from './get-combination.js';
 
 function OutputBox({ id, value }) {
   const n = id === 'two' ? 2 : 3;
-  const elements = getCombination(value, n);
+  const elements = getCombination(value, n).join(' ');
 
   return (
     <div>
