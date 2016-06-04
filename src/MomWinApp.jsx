@@ -5,6 +5,7 @@ class MomWinApp extends React.Component {
   constructor() {
     super();
     this.state = { value: '0' };
+    this.handleKeyUp = this.handleKeyUp.bind(this);
   }
 
   handleKeyUp() {
@@ -17,9 +18,9 @@ class MomWinApp extends React.Component {
       id: 'input',
       className: 'input u-full-width',
       type: 'text',
-      maxLength: 10,
       autoFocus: 'true',
-      onChange: this.handleKeyUp.bind(this),
+      maxLength: 10,
+      onChange: this.handleKeyUp,
     };
 
     const { value } = this.state;

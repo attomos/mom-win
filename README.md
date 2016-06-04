@@ -19,11 +19,3 @@ Dev
 Deploy
 ======
     npm build
-
-
-TODO:
-=====
-
-- [ ] Generate source map using webpack.
-- [ ] Use ES6 generator to create my own combination function?
-- [ ] CSS loader (webpack).

@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/app.jsx',
+  entry: './src/App.jsx',
   output: {
     filename: './dist/bundle.js',
   },
@@ -7,11 +7,15 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
+        loader: 'babel',
+        exclude: /(node_modules|test\.js)/,
         query: {
           presets: ['es2015', 'react', 'stage-1'],
         },
+      },
+      {
+        test: /\.css$/,
+        loader: 'style!css',
       },
     ],
   },
