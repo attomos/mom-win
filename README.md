@@ -18,4 +18,4 @@ Dev
 
 Deploy
 ======
-    npm build
+    npm run build
